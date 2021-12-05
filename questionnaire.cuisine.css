@@ -46,3 +46,41 @@ height:55em;
 	display: ;
 	
 }
+table {
+      border-collapse: collapse;
+      border: 2px solid black;
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+ 
+    td,th {
+      border: 1px solid black;
+      padding: 10px 20px;
+    }
+ 
+    td {
+      text-align: center;
+    }
+ 
+    th{
+      background-color: rgba(0,255,255);
+    }
+
+
+    
+.btn, .btn1{
+        background-color: rgba(50,100,100);
+        border:none;
+        width:70px;
+        height:30px;
+}
+ 
+.btn:hover{
+        background-color: rgba(0,255,255);
+ 
+}
+ 
+body{
+        background-color: #DCDCDC;
+}
+ 
