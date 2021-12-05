@@ -1,121 +1,226 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Questionnaire </title>
-			<meta charset="utf-8">
-			<link rel="stylesheet" href="questionnaire.cuisine.css"/>
-			<meta name="viewport" content="width=devicewidth">
-		</head>
+<<!DOCTYPE html>
 
-		<body>
-			<div class="boite">
-				<header>
+<html lang="fr"><!-- L'en-tête -->
 
-					<h1 class="titre1 ">Questionnaire</h1>
+<head>
 
-				</header>
-					<form action= "" method="get" class="form-example">
-			<div class="form-example">
-				<label for="nom">Entrer votre nom : </label>
-				<input type="text" name="nom" id="nom" required  placeholder="Un seul mot, en minuscules" size="30">
-			</div>
+<title>Commande</title>
 
-				<br>
+<meta charset="utf-8">
 
-			<div class="form-example">
-				<label for="prenom">Entrer votre prenom : </label>
-				<input type="text" name="prenom" id="prenom" required placeholder="avec une majuscule au debut">
-			</div>
-				<br> 
-					
-			<div class="form-example">
-			    <label for="email">entrer votre mail : </label>
-			    <input type="email" name="email" id="email" required placeholder="mail@gmail.com">
-			</div>
-				<br>
-					<p>Aimez-vous cuisinez :</p>
+<link href="questionnaire.cuisine.css" rel="stylesheet">
 
-			<div>
-				<input type="checkbox" id="oui" unchecked>
-				<label for="oui-- "> oui </label>	
-				<input type="checkbox" id="non" unchecked>
-				<label for="non "> non</label>
-			</div>
-				<p> combien de temps vous cuisinez chaque jour ? :</p>
-			<div>
-				<input type="checkbox" id=" temps" unchecked>
-				<label for="15 min-- "> 15  min</label>		
-				<input type="checkbox" id="temps" unchecked>
-				<label for="30 min-- "> 30 min </label>
-				<input type="checkbox" id="temps" unchecked>
-				<label for="45 min-- "> 45 min </label>
-				<input type="checkbox" id="temps" unchecked>
-				<label for="30 min-- "> + d'une 1h </label>
-			</div>
+<meta name="viewport" content="width=device-width">
 
-				<p>Aimez-vous decouvrir de nouvelle recette :</p>
+</head>
 
-			<div>
-				<input type="checkbox" id="oui" unchecked>
-				<label for="oui-- "> oui </label>
-				<input type="checkbox" id="non" unchecked>
-				<label for="non "> non</label>
-			</div>
+<!-- Le corps-->
 
-				<p>Aller-vous souvent dans des site de cuisine :</p>
+<body>
 
-			<div>
-				<input type="checkbox" id="oui" unchecked>
-				<label for="oui-- "> oui </label>		
-				<input type="checkbox" id="non" unchecked>
-				<label for="non "> non</label>
-			</div>
+<header>
 
-				<p> Preverez-vous un site de cuisine avec avec des explication en ....:</p>
+<form name="order">
 
-			<div>
-				<input type="checkbox" id="video" unchecked>
-				<label for="video-- "> video </label>
-							
-						
-						
-				<input type="checkbox" id="texte" unchecked>
-				<label for="texte "> texte </label>
-			</div>
+<h2>Questionnaire </h2>
+
+<span id="dateheure"></span>
+
+<h3>Coordonnées</h3>
+
+<div class="container">
+
+<input type="text" name="nom" placeholder="Nom" required>
+
+<input type="text" name="prenom" placeholder="Prénom" required>
+
+<input type="email" name="email" placeholder="email " required>
 
 
-				<br>
-			<div class="form-example">
-							<label for="Questionnaire">Qu'elle aliments aimez-vous : </label>
-								<input type="text" name="texte" id="texte" required placeholder="reponse courte">
-			</div>
-				<br> 
-			<div class="form-example">
-							<label for="Questionnaire">Qu'elle vous n'aimez pas : </label>
-								<input type="text" name="texte" id="texte" required placeholder="reponse courte">
-			</div>
+</div>
 
+<strong>Qu'elle type de site : </strong>
 
+<div class="container">
 
-			<div>
-			    <button type="submit"> Ajouter</button>
-			    <button type="reset">Annuler</button>
+<select name="livraison" id="livraison" size=1>
 
-			 
-			  	
-			</div>
+<option value="Video">video
 
+<option value="texte">texte
 
-			<div class="basdepage">
-			    <footer class="footer">
-			      <p>(C)Site Realisé par des éléves d'Efrei Paris</p>
-			    </footer>
-			</div>
+</select>
 
-  		</body>
-	</html>
+</div>
+
+<strong>aimez-vous cuisiner</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
+
+<strong>combien de temps cuisinez vous chaque jour</strong>
+<br>
+<div class="container">
+
+<input type="radio" name="30 min">30 min
+
+<input type="radio" name="15 min"> 15 min
+
+<input type="radio" name="45 min"> 45 min
+
+<input type="radio" name="60 min"> 60 min
+
+</div>
+
+</div>
+<br>
+<strong>aimez-vous decouvrir de nouvelle recette</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
+
+</div>
+<br>
+<strong>aimez-vous souvent dans de site de cuisine</strong>
+
+<div class="container">
+
+<input type="radio" name="oui">oui
+
+<input type="radio" name="non">non
+
+</div>
 
 
 
 
+<strong>Je souhaite recevoir des notification </strong>
 
+<input type="checkbox" name=”facture”><p>
+
+
+
+<div class="container">
+
+<strong>preferé-vous : </strong>
+
+<select name="cuisiner" id="entreeId" >
+
+<option value="Oriental">oriental
+
+<option value="indienne">indienne
+
+</select>
+
+</select>
+
+</div>
+
+<div class="container">
+
+<input type="text" name="aliment que vous aimez" placeholder="aliment que vous aimez" required>
+
+<input type="text" name="aliment que vous aimez pas" placeholder="aliment que vous aimez pas" required>
+
+</div>
+
+
+<p>
+
+<button type="submit" class="btn" onclick="ajouter()">Ajouter</button>
+
+<button type="button" class="btn"onclick="supprimer()" >Supprimer</button>
+
+<button type="reset" class="btn" >Annuler</button>
+
+</form>
+
+</header>
+
+<main>
+
+<table id="table_form">
+
+<tr>
+
+<th>Nom</th>
+
+<th>email</th>
+
+<th>Qu'elle type de site</th>
+
+<th>qu'elle type du cuisine aimez-vous</th>
+
+<th>qu'elle aliment aimez vous </th>
+
+<th>aliment que vous n'aimez pas  </th>
+
+</tr>
+
+</table>
+
+</main>
+<script>
+
+console.log();
+
+var orderForm=document.forms.order;
+
+function bienvenue()
+
+{
+
+alert("alerte salut");
+
+}
+
+function ajouter()
+
+{
+
+var createTr=document.createElement('tr');
+
+for(var i=1; i<7; i++)
+
+{
+
+this["td"+i]=document.createElement('td');
+
+}
+
+td1.textContent=orderForm.elements['nom'].value;
+
+td2.textContent=orderForm.elements['email'].value;
+
+td3.textContent=orderForm.elements['livraison'].value;
+
+td4.textContent=orderForm.elements['cuisiner'].value;
+
+td5.textContent=orderForm.elements['aliment que vous aimez'].value;
+
+td6.textContent=orderForm.elements['aliment que vous aimez pas'].value;
+
+for(i=1;i<7;i++)
+
+{
+
+createTr.append(this["td"+i]);
+
+}
+
+table_form.appendChild(createTr);
+
+}
+
+</script>
+</body>
